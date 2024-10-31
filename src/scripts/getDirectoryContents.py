@@ -4,6 +4,8 @@ import os
 def get_directory_contents(path, level=0):
     try:
         for entry in os.listdir(path):
+            if entry == '.git' and level == 0:
+                continue
             full_path = os.path.join(path, entry)
             print('  ' * level + entry)
             if os.path.isdir(full_path):
