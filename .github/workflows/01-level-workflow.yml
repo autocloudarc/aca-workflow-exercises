@@ -1,0 +1,27 @@
+# https://github.com/autocloudarc/aca-github-actions-exercises/blob/main/hol/01-My-first-workflow.md#creating-the-workflow 
+name: 01-level-workflow
+on:
+  push:
+    branches: [ main ]
+    paths-ignore: [.github/**] 
+  pull_request:
+    branches: [ main ]
+  schedule: 
+  # Run every 5 minutes
+    - cron: '*/5 * * * *' 
+  workflow_dispatch:
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+        echo "🎉 The job was triggered by event: ${{ github.event_name }}"
+        echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ."
+    
+    - uses: actions/checkout@v3.3.0
+    
+    - name: List files in the repository
+      run: |
+        echo "The repository ${{ github.repository }} contains the following files:"
+        tree
