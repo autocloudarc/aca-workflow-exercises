@@ -6,6 +6,7 @@ on:
 jobs:
   list-contents:
     runs-on: ubuntu-latest
+    environment: dev
     steps:
     - run: |
         echo "🎉 The job was triggered by event: ${{ github.event_name }}"
@@ -40,6 +41,10 @@ jobs:
 
   retrieve-values:
       runs-on: ubuntu-latest
+      environment: qua
       steps:
-      - name: get-current-branch
-        run: echo "🔎 The current branch is ${{ github.ref }}"
+      - name: retrieve-secrets
+        run: echo "🔎 The value of the secret is ${{ secrets.QUA_SECRET }}"
+      
+      - name: retrieve-variables
+        run: echo "🔎 The value of the variable is ${{ env.QUA_VARIABLE }}"
