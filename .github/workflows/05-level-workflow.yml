@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 env:
-  REPO_VARIABLE: ${{ vars.REPOL_LEVEL_VARIABLE }}
+  REPO_VARIABLE: ${{ vars.REPO_LEVEL_VARIABLE }}
   REPO_SECRET: ${{ secrets.REPO_LEVEL_SECRET }}
 
 jobs:
