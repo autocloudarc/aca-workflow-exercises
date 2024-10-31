@@ -6,6 +6,7 @@ on:
 jobs:
   list-contents:
     runs-on: ubuntu-latest
+    environment: dev
     steps:
     - run: |
         echo "🎉 The job was triggered by event: ${{ github.event_name }}"
@@ -37,3 +38,13 @@ jobs:
     # List the directory contents of the repository using a python script at src/scripts/getDirectoryContents.py
     - name: list-contents-with-python
       run: python3 src/scripts/getDirectoryContents.py
+
+  retrieve-values:
+      runs-on: ubuntu-latest
+      environment: qua
+      steps:
+      - name: retrieve-secrets
+        run: echo "🔎 The value of the secret is ${{ secrets.QUA_SECRET }}"
+      
+      - name: retrieve-variables
+        run: echo "🔎 The value of the variable is ${{ env.QUA_VARIABLE }}"
