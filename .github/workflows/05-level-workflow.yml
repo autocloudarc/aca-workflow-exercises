@@ -41,6 +41,7 @@ jobs:
 
   retrieve-values:
       runs-on: ubuntu-latest
+      needs: list-contents
       environment: qua
       env:
         QUA_VARIABLE: ${{ vars.QUA_VARIABLE }}
