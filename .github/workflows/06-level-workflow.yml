@@ -35,6 +35,7 @@ jobs:
       with:
         inlineScript: |
           New-Item -Path artifacts -ItemType File -Name list-contents.txt -Force -Verbose
+          Import-Csv -Path inputs/variables.csv -IgnoreHeader | Export-Csv -Path artifacts/variables-output.csv -NoTypeInformation -Verbose
           Get-ChildItem -Path . | Out-File -Path artifacts/list-contents.txt
         azPSVersion: 'latest'
 
@@ -46,7 +47,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: list-contents
-        path: artifacts/list-contents.txt
+        path: artifacts/**/*
 
   retrieve-values:
       runs-on: ubuntu-latest
@@ -72,5 +73,7 @@ jobs:
       - name: show-contents-from-artifact
         uses: azure/powershell@v2
         with:
-          inlineScript: Get-Content -Path downloads/list-contents.txt
+          inlineScript: | 
+            Get-Content -Path downloads/list-contents.txt
+            Import-Csv -Path downloads/variables-output.csv
           azPSVersion: 'latest'
