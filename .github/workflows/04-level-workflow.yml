@@ -3,6 +3,10 @@ on:
   push:
   workflow_dispatch:
 
+env:
+    QUA_VARIABLE: ${{ vars.QUA_VARIABLE }}
+    QUA_SECRET: ${{ secrets.QUA_SECRET }}
+
 jobs:
   list-contents:
     runs-on: ubuntu-latest
@@ -44,7 +48,7 @@ jobs:
       environment: qua
       steps:
       - name: retrieve-secrets
-        run: echo "🔎 The value of the secret is ${{ secrets.QUA_SECRET }}"
+        run: echo "The value of the secret is ${{ env.QUA_SECRET }}"
       
       - name: retrieve-variables
-        run: echo "🔎 The value of the variable is ${{ env.QUA_VARIABLE }}"
+        run: echo "The value of the variable is ${{ env.QUA_VARIABLE }}"
