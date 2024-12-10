@@ -29,4 +29,4 @@ jobs:
       shell: pwsh
       run: |
         Write-Output "Listing directory contents using PowerShell:"
-        Get-ChildItem -Recurse
+        Get-ChildItem -Path ./src -Recurse
