@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: |
-        echo "🎉 The job was triggered by event: ${{ github.event_name }}"
+        echo "🎉 The job was triggered by event: ${{ github.event_name }}!"
         echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ."
     
     - uses: actions/checkout@v4
@@ -24,3 +24,9 @@ jobs:
       run: |
         echo "The repository ${{ github.repository }} contains the following files:"
         tree
+
+    - name: list-contents-with-powershell
+      shell: pwsh
+      run: |
+        Write-Output "Listing directory contents using PowerShell:"
+        Get-ChildItem -Recurse
