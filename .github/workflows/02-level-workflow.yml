@@ -30,3 +30,8 @@ jobs:
           chmod +x src/scripts/Get-DirectoryContents.ps1
           src/scripts/Get-DirectoryContents.ps1
         azPSVersion: 'latest'
+
+      # List the directory contents of the repository using a inline python script at for the directory at src 
+    - name: list-contents-with-python
+      run: |
+        python3 -c "import os; print('\n'.join(os.listdir('./src')))"

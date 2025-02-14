@@ -1,0 +1,78 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\onedrive-prsn\\OneDrive\\02.00.00.GENERAL\\repos\\git\\aca-workflow-exercises\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\onedrive-prsn\\OneDrive\\02.00.00.GENERAL\\repos\\git\\aca-workflow-exercises\\.github\\workflows\\01-level-workflow.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.github\\workflows\\01-level-workflow.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\onedrive-prsn\\OneDrive\\02.00.00.GENERAL\\repos\\git\\aca-workflow-exercises\\.github\\workflows\\02-level-workflow.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.github\\workflows\\02-level-workflow.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 254,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "02-level-workflow.yml",
+              "DocumentMoniker": "C:\\onedrive-prsn\\OneDrive\\02.00.00.GENERAL\\repos\\git\\aca-workflow-exercises\\.github\\workflows\\02-level-workflow.yml",
+              "RelativeDocumentMoniker": ".github\\workflows\\02-level-workflow.yml",
+              "ToolTip": "C:\\onedrive-prsn\\OneDrive\\02.00.00.GENERAL\\repos\\git\\aca-workflow-exercises\\.github\\workflows\\02-level-workflow.yml",
+              "RelativeToolTip": ".github\\workflows\\02-level-workflow.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2024-12-10T17:41:40.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "01-level-workflow.yml",
+              "DocumentMoniker": "C:\\onedrive-prsn\\OneDrive\\02.00.00.GENERAL\\repos\\git\\aca-workflow-exercises\\.github\\workflows\\01-level-workflow.yml",
+              "RelativeDocumentMoniker": ".github\\workflows\\01-level-workflow.yml",
+              "ToolTip": "C:\\onedrive-prsn\\OneDrive\\02.00.00.GENERAL\\repos\\git\\aca-workflow-exercises\\.github\\workflows\\01-level-workflow.yml",
+              "RelativeToolTip": ".github\\workflows\\01-level-workflow.yml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAcwBAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2024-12-10T17:41:32.032Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
